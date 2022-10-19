@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public abstract class PageBase {
 
-    WebDriver driver;
+    public WebDriver driver;
 
     public PageBase(WebDriver driver) {
         this.driver = driver;
@@ -38,6 +38,14 @@ public abstract class PageBase {
             clickWithJSExecutor(element,x,y);
             element.clear();
             element.sendKeys(text);
+        }
+    }
+
+    public void pause(int millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
     }
 }

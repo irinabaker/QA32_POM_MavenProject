@@ -16,4 +16,12 @@ public class HomePage extends PageBase{
         clickWithJSExecutor(bookStoreApp,0,300);
         return new SidePanelPage(driver);
     }
+
+    @FindBy(xpath = "//div[.='Alerts, Frame & Windows']")
+    WebElement alertsFrameWindows;
+
+    public SidePanelPage getAlertsFrameWindows() {
+        clickWithJSExecutor(alertsFrameWindows,0,300);
+        return new SidePanelPage(driver);
+    }
 }
