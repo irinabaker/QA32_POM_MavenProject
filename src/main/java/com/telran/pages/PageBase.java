@@ -1,17 +1,19 @@
 package com.telran.pages;
 
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import com.google.common.io.Files;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.PageFactory;
 
-public abstract class PageBase {
+import java.io.File;
+import java.io.IOException;
+
+public class PageBase {
 
     public WebDriver driver;
 
     public PageBase(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 
     public void click(WebElement element) {
@@ -19,8 +21,8 @@ public abstract class PageBase {
     }
 
     public void type(WebElement element, String text) {
-        if (text!=null) {
-           click(element);
+        if (text != null) {
+            click(element);
             element.clear();
             element.sendKeys(text);
         }
@@ -34,8 +36,8 @@ public abstract class PageBase {
     }
 
     public void typeWithJSExecutor(WebElement element, String text, int x, int y) {
-        if (text!=null) {
-            clickWithJSExecutor(element,x,y);
+        if (text != null) {
+            clickWithJSExecutor(element, x, y);
             element.clear();
             element.sendKeys(text);
         }
@@ -48,4 +50,22 @@ public abstract class PageBase {
             e.printStackTrace();
         }
     }
+
+    public void takeScreenshot(String pathToFile) {
+
+        File tmp = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        File screenshot = new File(pathToFile);
+
+        try {
+            Files.copy(tmp, screenshot);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void hideAd() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("document.getElementById('adplus-anchor').style.display='none'");
+    }
+
 }
