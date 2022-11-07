@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-07T11:31:53 CET" name="Button" finished-at="2022-11-07T11:32:08 CET" duration-ms="15234">
+    <groups>
+    </groups>
+    <test started-at="2022-11-07T11:31:53 CET" name="ButtonTests" finished-at="2022-11-07T11:32:08 CET" duration-ms="15234">
+      <class name="com.telran.tests.elements.ButtonsTests">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.telran.tests.elements.ButtonsTests@6bbe85a8]" started-at="2022-11-07T11:31:53 CET" name="init" finished-at="2022-11-07T11:31:57 CET" duration-ms="4424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.telran.tests.elements.ButtonsTests@6bbe85a8]" started-at="2022-11-07T11:31:57 CET" name="startTest" finished-at="2022-11-07T11:31:57 CET" duration-ms="10" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.telran.tests.elements.ButtonsTests.doubleClickTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@6719a5b8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="ensurePrecondition()[pri:0, instance:com.telran.tests.elements.ButtonsTests@6bbe85a8]" started-at="2022-11-07T11:31:57 CET" name="ensurePrecondition" finished-at="2022-11-07T11:31:58 CET" duration-ms="1234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensurePrecondition -->
+        <test-method signature="doubleClickTest()[pri:0, instance:com.telran.tests.elements.ButtonsTests@6bbe85a8]" started-at="2022-11-07T11:31:58 CET" name="doubleClickTest" finished-at="2022-11-07T11:31:59 CET" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doubleClickTest -->
+        <test-method is-config="true" signature="stopTest(org.testng.ITestResult)[pri:0, instance:com.telran.tests.elements.ButtonsTests@6bbe85a8]" started-at="2022-11-07T11:31:59 CET" name="stopTest" finished-at="2022-11-07T11:31:59 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=doubleClickTest status=SUCCESS method=ButtonsTests.doubleClickTest()[pri:0, instance:com.telran.tests.elements.ButtonsTests@6bbe85a8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopTest -->
+        <test-method is-config="true" signature="tearDawn()[pri:0, instance:com.telran.tests.elements.ButtonsTests@6bbe85a8]" started-at="2022-11-07T11:31:59 CET" name="tearDawn" finished-at="2022-11-07T11:31:59 CET" duration-ms="868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDawn -->
+        <test-method is-config="true" signature="init()[pri:0, instance:com.telran.tests.elements.ButtonsTests@6bbe85a8]" started-at="2022-11-07T11:31:59 CET" name="init" finished-at="2022-11-07T11:32:04 CET" duration-ms="4638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method is-config="true" signature="startTest(java.lang.reflect.Method, [Ljava.lang.Object;)[pri:0, instance:com.telran.tests.elements.ButtonsTests@6bbe85a8]" started-at="2022-11-07T11:32:04 CET" name="startTest" finished-at="2022-11-07T11:32:04 CET" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.telran.tests.elements.ButtonsTests.rightClickTest()]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3eb631b8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTest -->
+        <test-method is-config="true" signature="ensurePrecondition()[pri:0, instance:com.telran.tests.elements.ButtonsTests@6bbe85a8]" started-at="2022-11-07T11:32:04 CET" name="ensurePrecondition" finished-at="2022-11-07T11:32:05 CET" duration-ms="745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ensurePrecondition -->
+        <test-method signature="rightClickTest()[pri:0, instance:com.telran.tests.elements.ButtonsTests@6bbe85a8]" started-at="2022-11-07T11:32:05 CET" name="rightClickTest" finished-at="2022-11-07T11:32:07 CET" duration-ms="2218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- rightClickTest -->
+        <test-method is-config="true" signature="stopTest(org.testng.ITestResult)[pri:0, instance:com.telran.tests.elements.ButtonsTests@6bbe85a8]" started-at="2022-11-07T11:32:07 CET" name="stopTest" finished-at="2022-11-07T11:32:07 CET" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=rightClickTest status=SUCCESS method=ButtonsTests.rightClickTest()[pri:0, instance:com.telran.tests.elements.ButtonsTests@6bbe85a8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopTest -->
+        <test-method is-config="true" signature="tearDawn()[pri:0, instance:com.telran.tests.elements.ButtonsTests@6bbe85a8]" started-at="2022-11-07T11:32:07 CET" name="tearDawn" finished-at="2022-11-07T11:32:08 CET" duration-ms="778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDawn -->
+      </class> <!-- com.telran.tests.elements.ButtonsTests -->
+    </test> <!-- ButtonTests -->
+  </suite> <!-- Button -->
+</testng-results>

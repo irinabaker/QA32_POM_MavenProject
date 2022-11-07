@@ -207,4 +207,6 @@ public class PracticeFormPage extends PageBase {
         clickWithRectangle(closeButton,2,3);
         return this;
     }
+
+
 }

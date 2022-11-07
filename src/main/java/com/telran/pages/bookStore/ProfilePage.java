@@ -40,6 +40,8 @@ public class ProfilePage extends PageBase {
     WebElement okButton;
 
     public ProfilePage deleteBook() {
+        hideAd();
+        hideFooter();
         pause(500);
         bookList.get(0).click();
         pause(1000);
